@@ -15,9 +15,9 @@ const login = async (email) => {
 
     const token = jwt.sign({ id: user._id }, secretkey, { expiresIn: '1h' });
     return token;
-  } catch (error) {
+  } catch (error) { 
     throw new Error(error.message || 'Error Occurred');
   }
-};
+};  
 
 module.exports = { login };
