@@ -15,6 +15,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
+
 connectDatabase();
 
 // Use routes
